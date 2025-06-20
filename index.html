@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MyShop - Online Shopping</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body { margin: 0; font-family: Arial, sans-serif; background: #f1f3f6; }
+    header { background: #2874f0; padding: 10px 20px; color: white; display: flex; align-items: center; justify-content: space-between; }
+    header input { padding: 6px; width: 300px; }
+    nav { display: flex; justify-content: space-around; background: white; padding: 10px 0; box-shadow: 0 1px 3px rgba(0,0,0,0.1); flex-wrap: wrap; }
+    nav div { text-align: center; font-size: 14px; cursor: pointer; padding: 5px 10px; }
+    .banner { background: linear-gradient(to right, #a32eff, #7932f3); color: white; text-align: center; padding: 30px 20px; position: relative; }
+    .banner img { width: 150px; position: absolute; right: 20px; top: 20px; }
+    .banner button { padding: 10px 20px; background: white; color: black; font-weight: bold; border: none; margin-top: 15px; cursor: pointer; }
+    .products { padding: 20px; background: white; margin: 20px; border-radius: 10px; }
+    .products h2 { margin-top: 0; display: flex; justify-content: space-between; align-items: center; }
+    .see-more { font-size: 14px; color: #2874f0; cursor: pointer; text-decoration: underline; }
+    .product-grid { display: flex; gap: 20px; overflow-x: auto; }
+    .product { min-width: 150px; background: #eee; padding: 10px; border-radius: 5px; text-align: center; }
+    .product img { width: 100px; height: 100px; object-fit: cover; border-radius: 8px; }
+    footer { background: #212121; color: #ccc; padding: 30px 20px; display: flex; flex-wrap: wrap; justify-content: space-between; }
+    footer div { margin: 10px; }
+    footer a { color: #ccc; text-decoration: none; display: block; margin-bottom: 5px; }
+    footer h4 { color: white; margin-bottom: 10px; }
+    .socials img { width: 20px; margin-right: 10px; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div><strong>MyShop</strong></div>
+    <input type="text" placeholder="Search for Products, Brands and More">
+    <div>
+      <a href="#login" style="color:white; text-decoration:none;">Login</a> |
+      <a href="#orders" style="color:white; text-decoration:none;">Orders</a> |
+      <a href="#help" style="color:white; text-decoration:none;">Help</a>
+    </div>
+  </header>
+
+  <nav>
+    <div>Mobiles</div>
+    <div>Fashion</div>
+    <div>Footwear</div>
+    <div>Electronics</div>
+    <div>Kitchen</div>
+    <div>Beauty</div>
+    <div>Bookings</div>
+    <div>Payments</div>
+    <div>More</div>
+  </nav>
+
+  <section class="banner">
+    <h2>Roundtrip Booking Offers!</h2>
+    <p>Up to ₹3,500 Off - Book now</p>
+    <button onclick="alert('Code Applied: ROUNDTRIP')">USE CODE: ROUNDTRIP</button>
+    <img src="https://cdn-icons-png.flaticon.com/512/69/69881.png" alt="Plane">
+  </section>
+
+  <!-- Electronics -->
+  <section class="products">
+    <h2>Electronics <span class="see-more" onclick="alert('More Electronics Coming Soon!')">See more</span></h2>
+    <div class="product-grid">
+      <div class="product"><img src="https://images.pexels.com/photos/788946/pexels-photo-788946.jpeg" alt="Headphones"><br>Headphones</div>
+      <div class="product"><img src="https://images.pexels.com/photos/18105/pexels-photo.jpg" alt="Laptop"><br>Laptop</div>
+      <div class="product"><img src="https://images.pexels.com/photos/414974/pexels-photo-414974.jpeg" alt="Projector"><br>Projector</div>
+    </div>
+  </section>
+
+  <!-- Mobiles -->
+  <section class="products">
+    <h2>Mobiles <span class="see-more" onclick="alert('More Mobiles Coming Soon!')">See more</span></h2>
+    <div class="product-grid">
+      <div class="product"><img src="https://images.pexels.com/photos/607812/pexels-photo-607812.jpeg" alt="iPhone"><br>iPhone</div>
+      <div class="product"><img src="https://images.pexels.com/photos/1092644/pexels-photo-1092644.jpeg" alt="Samsung"><br>Samsung Galaxy</div>
+      <div class="product"><img src="https://images.pexels.com/photos/404280/pexels-photo-404280.jpeg" alt="Android"><br>Android</div>
+    </div>
+  </section>
+
+  <!-- Fashion -->
+  <section class="products">
+    <h2>Fashion <span class="see-more" onclick="alert('More Fashion Coming Soon!')">See more</span></h2>
+    <div class="product-grid">
+      <div class="product"><img src="https://images.pexels.com/photos/6311398/pexels-photo-6311398.jpeg" alt="Dress"><br>Maxi Dress</div>
+      <div class="product"><img src="https://images.pexels.com/photos/6311617/pexels-photo-6311617.jpeg" alt="Casual"><br>Casual Wear</div>
+      <div class="product"><img src="https://images.pexels.com/photos/6311614/pexels-photo-6311614.jpeg" alt="Floral"><br>Floral Dress</div>
+    </div>
+  </section>
+
+  <!-- Kitchen -->
+  <section class="products">
+    <h2>Kitchen <span class="see-more" onclick="alert('More Kitchen Items Coming Soon!')">See more</span></h2>
+    <div class="product-grid">
+      <div class="product"><img src="https://images.pexels.com/photos/2725744/pexels-photo-2725744.jpeg" alt="Cookware"><br>Cookware Set</div>
+      <div class="product"><img src="https://images.pexels.com/photos/5591636/pexels-photo-5591636.jpeg" alt="Purifier"><br>Water Purifier</div>
+      <div class="product"><img src="https://images.pexels.com/photos/6195111/pexels-photo-6195111.jpeg" alt="Appliance"><br>Home Appliance</div>
+    </div>
+  </section>
+
+  <!-- Login -->
+  <section id="login" class="products">
+    <h2>Login</h2>
+    <p>Login to your account to manage orders and address info.</p>
+  </section>
+
+  <!-- Orders -->
+  <section id="orders" class="products">
+    <h2>Your Orders</h2>
+    <p>No recent orders found. Browse and start shopping!</p>
+  </section>
+
+  <!-- Help -->
+  <section id="help" class="products">
+    <h2>Help & Support</h2>
+    <p>Need help? Reach out to customer support or check FAQs.</p>
+  </section>
+
+  <footer>
+    <div>
+      <h4>ABOUT</h4>
+      <a href="#">Contact Us</a>
+      <a href="#">Careers</a>
+      <a href="#">Corporate Info</a>
+    </div>
+    <div>
+      <h4>HELP</h4>
+      <a href="#help">Payments</a>
+      <a href="#help">Shipping</a>
+      <a href="#help">FAQs</a>
+    </div>
+    <div>
+      <h4>POLICIES</h4>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+      <a href="#">Security</a>
+    </div>
+    <div>
+      <h4>MAIL US</h4>
+      MyShop Pvt Ltd<br>Bangalore, India<br>560103
+    </div>
+    <div class="socials">
+      <h4>Follow Us</h4>
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384005.png" alt="fb">
+      <img src="https://cdn-icons-png.flaticon.com/512/733/733635.png" alt="insta">
+      <img src="https://cdn-icons-png.flaticon.com/512/1384/1384012.png" alt="yt">
+    </div>
+  </footer>
+
+</body>
+</html>
